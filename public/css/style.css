@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #212529;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: 400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    color: #212529;
+    font-weight: 500;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #59ab6e;
+}
+
+
+.btn-success {
+    background-color: #59ab6e;
+    border-color: #59ab6e;
+}
+
+.btn-success:hover {
+    background-color: #408c54;
+    border-color: #408c54;
+}
+
+
+.home-section {
+    background-color: #efefef;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.home-section h1 {
+    color: #212529;
+    line-height: 1.2;
+}
+
+.home-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.page-banner {
+    background-color: #59ab6e !important;
+}
+
+
+.about-panel {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.product-card {
+    border: 1px solid #e5e5e5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-placeholder {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    color: #6c757d;
+}
+
+
+.product-wap .product-overlay {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.product-wap:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-overlay .btn-success {
+    background-color: #59ab6e;
+    border-color: #59ab6e;
+    color: #ffffff;
+}
+
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #59ab6e;
+    box-shadow: 0 0 0 0.2rem rgba(89, 171, 110, 0.2);
+}
+
+.site-footer {
+    background-color: #212934 !important;
+}
+
+.site-footer a {
+    color: #cfd6e1;
+}
+
+.site-footer a:hover {
+    color: #59ab6e;
+}
+
+.site-footer h5 {
+    margin-bottom: 18px;
+}
+
+#tempaltemo_footer {
+    background-color: #212529 !important;
+    color: #cfd6df;
+}
+
+#tempaltemo_footer h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+#tempaltemo_footer .text-success {
+    color: #61b15a !important;
+}
+
+#tempaltemo_footer ul.footer-link-list li a {
+    color: #cfd6df;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#tempaltemo_footer ul.footer-link-list li a:hover {
+    color: #61b15a;
+}
+
+#tempaltemo_footer .footer-icons li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.services-icon-wap {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.services-icon-wap:hover {
+    background-color: #59ab6e !important;
+    color: #fff !important;
+}
+
+.services-icon-wap:hover h2,
+.services-icon-wap:hover i,
+.services-icon-wap:hover div {
+    color: #fff !important;
+}
+
+
+.brand-img {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.brand-img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+.templatemo-accordion a {
+    color: #212529 !important;
+}
+
+.category-arrow {
+    color: #000000 !important;
+}
+
+
+.shop-products {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 24px;
+    row-gap: 24px;
+    margin: 0;
+}
+
+.shop-products > div {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 0 !important;
+}
+
+
+@media (max-width: 991px) {
+    .shop-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .home-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .home-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+}
